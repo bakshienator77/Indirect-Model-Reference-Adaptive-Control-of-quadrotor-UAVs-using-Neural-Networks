@@ -1,0 +1,119 @@
+%implements s1_b0_xvcyi_Start "C"
+
+%function Start(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+int32_T i;
+%closefile localVarDecl
+%assign tlcStartFcnOfS1B13 = OpaqueTLCBlockFcn("Start", 1, 13, 0, 0)
+%assign tlcStartFcnOfS1B14 = OpaqueTLCBlockFcn("Start", 1, 14, 0, 0)
+%assign tlcStartFcnOfS1B18 = OpaqueTLCBlockFcn("Start", 1, 18, 0, 0)
+%assign tlcStartFcnOfS1B19 = OpaqueTLCBlockFcn("Start", 1, 19, 0, 0)
+%assign tlcStartFcnOfS1B20 = OpaqueTLCBlockFcn("Start", 1, 20, 0, 0)
+%assign tlcStartFcnOfS1B21 = OpaqueTLCBlockFcn("Start", 1, 21, 0, 0)
+%assign tlcStartFcnOfS1B22 = OpaqueTLCBlockFcn("Start", 1, 22, 0, 0)
+%assign tlcStartFcnOfS1B23 = OpaqueTLCBlockFcn("Start", 1, 23, 0, 0)
+%assign tlcStartFcnOfS1B24 = OpaqueTLCBlockFcn("Start", 1, 24, 0, 0)
+%assign tlcStartFcnOfS1B25 = OpaqueTLCBlockFcn("Start", 1, 25, 0, 0)
+%assign tlcStartFcnOfS1B29 = OpaqueTLCBlockFcn("Start", 1, 29, 0, 0)
+%assign tlcStartFcnOfS1B30 = OpaqueTLCBlockFcn("Start", 1, 30, 0, 0)
+%assign tlcStartFcnOfS1B31 = OpaqueTLCBlockFcn("Start", 1, 31, 0, 0)
+%assign tlcStartFcnOfS1B32 = OpaqueTLCBlockFcn("Start", 1, 32, 0, 0)
+%assign tlcStartFcnOfS1B33 = OpaqueTLCBlockFcn("Start", 1, 33, 0, 0)
+%assign tlcStartFcnOfS1B34 = OpaqueTLCBlockFcn("Start", 1, 34, 0, 0)
+%assign tlcStartFcnOfS1B35 = OpaqueTLCBlockFcn("Start", 1, 35, 0, 0)
+%assign tlcStartFcnOfS1B36 = OpaqueTLCBlockFcn("Start", 1, 36, 0, 0)
+%assign tlcStartFcnOfS1B37 = OpaqueTLCBlockFcn("Start", 1, 37, 0, 0)
+%assign tlcStartFcnOfS1B38 = OpaqueTLCBlockFcn("Start", 1, 38, 0, 0)
+%assign tlcStartFcnOfS1B39 = OpaqueTLCBlockFcn("Start", 1, 39, 0, 0)
+%assign tlcStartFcnOfS1B40 = OpaqueTLCBlockFcn("Start", 1, 40, 0, 0)
+%assign tlcStartFcnOfS1B41 = OpaqueTLCBlockFcn("Start", 1, 41, 0, 0)
+%assign tlcStartFcnOfS1B42 = OpaqueTLCBlockFcn("Start", 1, 42, 0, 0)
+%assign tlcStartFcnOfS1B43 = OpaqueTLCBlockFcn("Start", 1, 43, 0, 0)
+%assign tlcStartFcnOfS1B46 = OpaqueTLCBlockFcn("Start", 1, 46, 0, 0)
+%assign tlcStartFcnOfS1B47 = OpaqueTLCBlockFcn("Start", 1, 47, 0, 0)
+%assign tlcStartFcnOfS1B48 = OpaqueTLCBlockFcn("Start", 1, 48, 0, 0)
+%assign tlcStartFcnOfS1B49 = OpaqueTLCBlockFcn("Start", 1, 49, 0, 0)
+%assign tlcStartFcnOfS1B50 = OpaqueTLCBlockFcn("Start", 1, 50, 0, 0)
+%assign tlcStartFcnOfS1B51 = OpaqueTLCBlockFcn("Start", 1, 51, 0, 0)
+%assign tlcStartFcnOfS1B52 = OpaqueTLCBlockFcn("Start", 1, 52, 0, 0)
+%assign tlcStartFcnOfS1B53 = OpaqueTLCBlockFcn("Start", 1, 53, 0, 0)
+%assign tlcStartFcnOfS1B54 = OpaqueTLCBlockFcn("Start", 1, 54, 0, 0)
+%assign tlcStartFcnOfS1B55 = OpaqueTLCBlockFcn("Start", 1, 55, 0, 0)
+%assign tlcStartFcnOfS1B56 = OpaqueTLCBlockFcn("Start", 1, 56, 0, 0)
+%assign tlcStartFcnOfS1B57 = OpaqueTLCBlockFcn("Start", 1, 57, 0, 0)
+for (i = 0; i < 5; i++) {
+    rtB.ozbz5gubyy[i] = rtP.RateTransition5_X0;
+}
+rtB.cumtgeesf2 = rtP.roll_Value;
+rtB.pw0st5lz3o = rtP.dotroll_Value;
+rtB.jtvpyj40xq = rtP.pitch_Value;
+rtB.nrjzzj2qug = rtP.dotpitch_Value;
+rtB.mgjibyeiyq = rtP.yaw_Value;
+rtB.h1kzkggluy = rtP.dotyaw_Value;
+rtB.fdumaqsogw = rtP.z_Value;
+rtB.nf2qdv5ebg = rtP.dotz_Value;
+rtB.csb3miaubk = rtP.x_Value;
+rtB.ajoccxffw1 = rtP.dotx_Value;
+rtB.hi3qcdmqxy = rtP.y_Value;
+rtB.bjkxqowawx = rtP.doty_Value;
+%<tlcStartFcnOfS1B13>\
+%<tlcStartFcnOfS1B14>\
+%<tlcStartFcnOfS1B18>\
+%<tlcStartFcnOfS1B19>\
+%<tlcStartFcnOfS1B20>\
+memcpy(&rtDW.goeaybcczk[0], &rtP._InitialValue[0], 4952U * sizeof(real_T));
+rtDW.p1523am3xn = rtP._InitialValue_kaxby53rmb;
+rtDW.lbjuqj1jse[0] = rtP._InitialValue_fq0n0lozer[0];
+rtDW.lbjuqj1jse[1] = rtP._InitialValue_fq0n0lozer[1];
+rtDW.lbjuqj1jse[2] = rtP._InitialValue_fq0n0lozer[2];
+rtDW.ijl15xpdki[0] = rtP._InitialValue_pr3dczi3uu[0];
+rtDW.ijl15xpdki[1] = rtP._InitialValue_pr3dczi3uu[1];
+rtDW.ijl15xpdki[2] = rtP._InitialValue_pr3dczi3uu[2];
+rtDW.m5faqsniyp = rtP._InitialValue_bzqtoeiajg;
+rtDW.jh112nxos5[0] = rtP._InitialValue_ovahcmohkr[0];
+rtDW.jh112nxos5[1] = rtP._InitialValue_ovahcmohkr[1];
+rtDW.jh112nxos5[2] = rtP._InitialValue_ovahcmohkr[2];
+rtDW.jh112nxos5[3] = rtP._InitialValue_ovahcmohkr[3];
+%<tlcStartFcnOfS1B21>\
+%<tlcStartFcnOfS1B22>\
+%<tlcStartFcnOfS1B23>\
+%<tlcStartFcnOfS1B24>\
+%<tlcStartFcnOfS1B25>\
+%<tlcStartFcnOfS1B29>\
+%<tlcStartFcnOfS1B30>\
+%<tlcStartFcnOfS1B31>\
+%<tlcStartFcnOfS1B32>\
+%<tlcStartFcnOfS1B33>\
+%<tlcStartFcnOfS1B34>\
+%<tlcStartFcnOfS1B35>\
+%<tlcStartFcnOfS1B36>\
+%<tlcStartFcnOfS1B37>\
+%<tlcStartFcnOfS1B38>\
+%<tlcStartFcnOfS1B39>\
+%<tlcStartFcnOfS1B40>\
+%<tlcStartFcnOfS1B41>\
+%<tlcStartFcnOfS1B42>\
+%<tlcStartFcnOfS1B43>\
+%<tlcStartFcnOfS1B46>\
+%<tlcStartFcnOfS1B47>\
+%<tlcStartFcnOfS1B48>\
+%<tlcStartFcnOfS1B49>\
+%<tlcStartFcnOfS1B50>\
+%<tlcStartFcnOfS1B51>\
+%<tlcStartFcnOfS1B52>\
+%<tlcStartFcnOfS1B53>\
+%<tlcStartFcnOfS1B54>\
+%<tlcStartFcnOfS1B55>\
+%<tlcStartFcnOfS1B56>\
+%<tlcStartFcnOfS1B57>\
+rtDW.aksh5baiiy = rtP.DataStoreMemory_InitialValue;
+rtDW.d5hpgafpfn = rtP.DataStoreMemory1_InitialValue;
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%<LibSetSystemField(system, "CachedStartLocalVars", localVarDecl)>
+%endfunction

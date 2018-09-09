@@ -1,0 +1,33 @@
+subplot(2,2,1)
+hold on
+plot(roll.Data,'r')
+plot(referz.Data(:,1),'--b')
+legend('Actual','Reference')
+title('Roll')
+xlabel('Time (x10^2 ms)')
+ylabel('Roll angle (in radians)')
+subplot(2,2,2)
+hold on
+plot(pitch.Data,'r')
+plot(referz.Data(:,2),'--b')
+legend('Actual','Reference')
+title('Pitch')
+xlabel('Time (x10^2 ms)')
+ylabel('Pitch angle (in radians)')
+subplot(2,2,3)
+hold on
+plot(yaw.Data,'r')
+plot(referz.Data(:,3),'--b')
+legend('Actual','Reference')
+title('Yaw')
+xlabel('Time (x10^2 ms)')
+ylabel('Yaw angle (in radians)')
+subplot(2,2,4)
+hold on
+plot(z.Data,'r')
+plot(referz.Data(:,4),'--b')
+legend('Actual','Reference','Location','southeast')
+title('Z (Altitiude)')
+xlabel('Time (x10^2 ms)')
+ylabel('Height (in m)')
+hold off

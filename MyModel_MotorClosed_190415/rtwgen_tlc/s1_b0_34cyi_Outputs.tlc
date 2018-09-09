@@ -1,0 +1,390 @@
+%implements s1_b0_34cyi_Outputs "C"
+
+%function Outputs(block, system) Output
+%<SLibCGIRAccessLocalVar(9, 0)> %% rtb_DataStoreRead5
+%<SLibCGIRAccessLocalVar(8, 0)> %% rtb_DataStoreRead
+%<SLibCGIRAccessLocalVar(5, 0)> %% rtb_DataStoreRead3
+%<SLibCGIRAccessLocalVar(10, 0)> %% rtb_DataStoreRead6
+%<SLibCGIRAccessLocalVar(7, 0)> %% rtb_PlantModelNN
+%assign localVarDecl = ""
+%openfile localVarDecl
+real_T currentTime;
+int32_T i;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 2)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 2)
+%assign tlcOutputsFcnOfS0B3 = OpaqueTLCBlockFcn("Outputs", 0, 3, 0, 2)
+%assign tlcOutputsFcnOfS0B4 = OpaqueTLCBlockFcn("Outputs", 0, 4, 0, 2)
+%assign tlcOutputsFcnOfS0B5 = OpaqueTLCBlockFcn("Outputs", 0, 5, 0, 2)
+%assign tlcOutputsFcnOfS0B6 = OpaqueTLCBlockFcn("Outputs", 0, 6, 0, 2)
+%assign tlcOutputsFcnOfS0B7 = OpaqueTLCBlockFcn("Outputs", 0, 7, 0, 2)
+%assign tlcOutputsFcnOfS0B8 = OpaqueTLCBlockFcn("Outputs", 0, 8, 0, 2)
+%assign tlcOutputsFcnOfS0B9 = OpaqueTLCBlockFcn("Outputs", 0, 9, 0, 2)
+%assign tlcOutputsFcnOfS0B10 = OpaqueTLCBlockFcn("Outputs", 0, 10, 0, 2)
+%assign tlcOutputsFcnOfS0B11 = OpaqueTLCBlockFcn("Outputs", 0, 11, 0, 2)
+%assign tlcOutputsFcnOfS0B12 = OpaqueTLCBlockFcn("Outputs", 0, 12, 0, 2)
+%assign tlcOutputsFcnOfS0B13 = OpaqueTLCBlockFcn("Outputs", 0, 13, 0, 2)
+%assign tlcOutputsFcnOfS0B14 = OpaqueTLCBlockFcn("Outputs", 0, 14, 0, 2)
+%assign tlcOutputsFcnOfS0B15 = OpaqueTLCBlockFcn("Outputs", 0, 15, 0, 2)
+%assign tlcOutputsFcnOfS0B16 = OpaqueTLCBlockFcn("Outputs", 0, 16, 0, 2)
+%assign tlcOutputsFcnOfS0B17 = OpaqueTLCBlockFcn("Outputs", 0, 17, 0, 2)
+%assign tlcOutputsFcnOfS0B18 = OpaqueTLCBlockFcn("Outputs", 0, 18, 0, 2)
+%assign tlcOutputsFcnOfS0B19 = OpaqueTLCBlockFcn("Outputs", 0, 19, 0, 2)
+%assign tlcOutputsFcnOfS0B20 = OpaqueTLCBlockFcn("Outputs", 0, 20, 0, 2)
+%assign tlcOutputsFcnOfS0B21 = OpaqueTLCBlockFcn("Outputs", 0, 21, 0, 2)
+%assign tlcOutputsFcnOfS0B22 = OpaqueTLCBlockFcn("Outputs", 0, 22, 0, 2)
+%assign tlcOutputsFcnOfS0B23 = OpaqueTLCBlockFcn("Outputs", 0, 23, 0, 2)
+%assign tlcOutputsFcnOfS0B24 = OpaqueTLCBlockFcn("Outputs", 0, 24, 0, 2)
+%assign tlcOutputsFcnOfS0B25 = OpaqueTLCBlockFcn("Outputs", 0, 25, 0, 2)
+%assign tlcOutputsFcnOfS0B26 = OpaqueTLCBlockFcn("Outputs", 0, 26, 0, 2)
+%assign tlcOutputsFcnOfS0B27 = OpaqueTLCBlockFcn("Outputs", 0, 27, 0, 2)
+%assign tlcOutputsFcnOfS0B28 = OpaqueTLCBlockFcn("Outputs", 0, 28, 0, 2)
+%assign tlcOutputsFcnOfS0B29 = OpaqueTLCBlockFcn("Outputs", 0, 29, 0, 2)
+%assign tlcOutputsFcnOfS0B30 = OpaqueTLCBlockFcn("Outputs", 0, 30, 0, 2)
+%assign tlcOutputsFcnOfS0B31 = OpaqueTLCBlockFcn("Outputs", 0, 31, 0, 2)
+%assign tlcOutputsFcnOfS0B32 = OpaqueTLCBlockFcn("Outputs", 0, 32, 0, 2)
+%assign tlcOutputsFcnOfS0B33 = OpaqueTLCBlockFcn("Outputs", 0, 33, 0, 2)
+%assign tlcOutputsFcnOfS0B34 = OpaqueTLCBlockFcn("Outputs", 0, 34, 0, 2)
+%assign tlcOutputsFcnOfS0B35 = OpaqueTLCBlockFcn("Outputs", 0, 35, 0, 2)
+%assign tlcOutputsFcnOfS0B36 = OpaqueTLCBlockFcn("Outputs", 0, 36, 0, 2)
+%assign tlcOutputsFcnOfS0B37 = OpaqueTLCBlockFcn("Outputs", 0, 37, 0, 2)
+%assign tlcOutputsFcnOfS0B38 = OpaqueTLCBlockFcn("Outputs", 0, 38, 0, 2)
+%assign tlcOutputsFcnOfS0B39 = OpaqueTLCBlockFcn("Outputs", 0, 39, 0, 2)
+%assign tlcOutputsFcnOfS0B40 = OpaqueTLCBlockFcn("Outputs", 0, 40, 0, 2)
+%assign tlcOutputsFcnOfS0B41 = OpaqueTLCBlockFcn("Outputs", 0, 41, 0, 2)
+%assign tlcOutputsFcnOfS0B42 = OpaqueTLCBlockFcn("Outputs", 0, 42, 0, 2)
+%assign tlcOutputsFcnOfS0B43 = OpaqueTLCBlockFcn("Outputs", 0, 43, 0, 2)
+%assign tlcOutputsFcnOfS0B44 = OpaqueTLCBlockFcn("Outputs", 0, 44, 0, 2)
+%assign tlcOutputsFcnOfS0B45 = OpaqueTLCBlockFcn("Outputs", 0, 45, 0, 2)
+%assign tlcOutputsFcnOfS0B46 = OpaqueTLCBlockFcn("Outputs", 0, 46, 0, 2)
+%assign tlcOutputsFcnOfS0B47 = OpaqueTLCBlockFcn("Outputs", 0, 47, 0, 2)
+%assign tlcOutputsFcnOfS0B48 = OpaqueTLCBlockFcn("Outputs", 0, 48, 0, 2)
+%assign tlcOutputsFcnOfS0B49 = OpaqueTLCBlockFcn("Outputs", 0, 49, 0, 2)
+%assign tlcOutputsFcnOfS0B50 = OpaqueTLCBlockFcn("Outputs", 0, 50, 0, 2)
+%assign tlcOutputsFcnOfS0B51 = OpaqueTLCBlockFcn("Outputs", 0, 51, 0, 2)
+%assign tlcOutputsFcnOfS0B52 = OpaqueTLCBlockFcn("Outputs", 0, 52, 0, 2)
+%assign tlcOutputsFcnOfS0B53 = OpaqueTLCBlockFcn("Outputs", 0, 53, 0, 2)
+%assign tlcOutputsFcnOfS0B54 = OpaqueTLCBlockFcn("Outputs", 0, 54, 0, 2)
+%assign tlcOutputsFcnOfS0B55 = OpaqueTLCBlockFcn("Outputs", 0, 55, 0, 2)
+%assign tlcOutputsFcnOfS0B56 = OpaqueTLCBlockFcn("Outputs", 0, 56, 0, 2)
+%<SLibGetRootInportsFromFile(system)>
+/* RateTransition: '<Root>/Rate Transition5' incorporates:
+ *  RateTransition: '<Root>/Rate Transition1'
+ */
+if (%<(SLibCG_SE(SLibCGIRIsSampleHit(1, 0)))> && %<(SLibCG_SE(LibIsSpecialSampleHit(2, 1)))>) {
+    for (i = 0; i < 5; i++) {
+        rtB.RateTransition5[i] = rtDW.RateTransition5_Buffer0[i];
+    }
+    rtB.RateTransition1 = rtB.RateTransition5[4];
+}
+/* End of RateTransition: '<Root>/Rate Transition5' */
+if (%<(SLibCGIRIsSampleHit(2, 0))>) {
+    /* DataStoreWrite: '<Root>/Data Store Write' */
+    rtDW.countervariable67 = rtB.RateTransition1;
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/roll' */
+    rtB.roll = rtP.roll_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B0>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/dotroll' */
+    rtB.dotroll = rtP.dotroll_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B1>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/pitch' */
+    rtB.pitch = rtP.pitch_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B2>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/dotpitch' */
+    rtB.dotpitch = rtP.dotpitch_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B3>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/yaw' */
+    rtB.yaw = rtP.yaw_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B4>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/dotyaw' */
+    rtB.dotyaw = rtP.dotyaw_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B5>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/z' */
+    rtB.z = rtP.z_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B6>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/dotz' */
+    rtB.dotz = rtP.dotz_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B7>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/x' */
+    rtB.x = rtP.x_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B8>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/dotx' */
+    rtB.dotx = rtP.dotx_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B9>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/y' */
+    rtB.y = rtP.y_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B10>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Constant: '<S4>/doty' */
+    rtB.doty = rtP.doty_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B11>\
+    /* TransferFcn: '<S20>/Transfer Fcn' */
+    rtB.TransferFcn = 0.0;
+    rtB.TransferFcn += rtP.TransferFcn_C * rtX.TransferFcn_CSTATE;
+    /* TransferFcn: '<S21>/Transfer Fcn' */
+    rtB.TransferFcn_k = 0.0;
+    rtB.TransferFcn_k += rtP.TransferFcn_C_g * rtX.TransferFcn_CSTATE_f;
+    /* TransferFcn: '<S22>/Transfer Fcn' */
+    rtB.TransferFcn_g = 0.0;
+    rtB.TransferFcn_g += rtP.TransferFcn_C_a * rtX.TransferFcn_CSTATE_h;
+    /* TransferFcn: '<S23>/Transfer Fcn' */
+    rtB.TransferFcn_ke = 0.0;
+    rtB.TransferFcn_ke += rtP.TransferFcn_C_e * rtX.TransferFcn_CSTATE_d;
+    /* Step: '<S1>/Step' */
+    currentTime = %<(SLibCG_SE(LibGetTaskTime(0)))>;
+    if (currentTime < rtP.Step_Time) {
+        rtb_DataStoreRead5 = rtP.Step_Y0;
+    } else {
+        rtb_DataStoreRead5 = rtP.Step_YFinal;
+    }
+    /* End of Step: '<S1>/Step' */
+%<tlcOutputsFcnOfS0B12>\
+    /* SignalConversion: '<S1>/TmpSignal ConversionAtS-FunctionInport1' */
+    rtB.TmpSignalConversionAtSFunctionI[0] = rtB.Integrator;
+    rtB.TmpSignalConversionAtSFunctionI[1] = rtB.Integrator6;
+    rtB.TmpSignalConversionAtSFunctionI[2] = rtB.Integrator1;
+    rtB.TmpSignalConversionAtSFunctionI[3] = rtB.Integrator7;
+    rtB.TmpSignalConversionAtSFunctionI[4] = rtB.Integrator2;
+    rtB.TmpSignalConversionAtSFunctionI[5] = rtB.Integrator8;
+    rtB.TmpSignalConversionAtSFunctionI[6] = rtB.Integrator3;
+    rtB.TmpSignalConversionAtSFunctionI[7] = rtB.Integrator10;
+    rtB.TmpSignalConversionAtSFunctionI[8] = rtB.Integrator4;
+    rtB.TmpSignalConversionAtSFunctionI[9] = rtB.Integrator9;
+    rtB.TmpSignalConversionAtSFunctionI[10] = rtB.Integrator5;
+    rtB.TmpSignalConversionAtSFunctionI[11] = rtB.Integrator11;
+    rtB.TmpSignalConversionAtSFunctionI[12] = rtB.TransferFcn;
+    rtB.TmpSignalConversionAtSFunctionI[13] = rtB.TransferFcn_k;
+    rtB.TmpSignalConversionAtSFunctionI[14] = rtB.TransferFcn_g;
+    rtB.TmpSignalConversionAtSFunctionI[15] = rtB.TransferFcn_ke;
+    rtB.TmpSignalConversionAtSFunctionI[16] = rtb_DataStoreRead5;
+    rtB.TmpSignalConversionAtSFunctionI[17] = rtB.Clock;
+%<tlcOutputsFcnOfS0B13>\
+    /* DataStoreRead: '<S3>/Data Store Read' */
+    rtb_DataStoreRead5 = rtDW.Om_old;
+    /* SignalConversion: '<S3>/TmpSignal ConversionAtS-FunctionInport1' */
+    rtB.TmpSignalConversionAtSFunctio_c[0] = rtB.Integrator;
+    rtB.TmpSignalConversionAtSFunctio_c[1] = rtB.Integrator6;
+    rtB.TmpSignalConversionAtSFunctio_c[2] = rtB.Integrator1;
+    rtB.TmpSignalConversionAtSFunctio_c[3] = rtB.Integrator7;
+    rtB.TmpSignalConversionAtSFunctio_c[4] = rtB.Integrator2;
+    rtB.TmpSignalConversionAtSFunctio_c[5] = rtB.Integrator8;
+    rtB.TmpSignalConversionAtSFunctio_c[6] = rtB.Integrator3;
+    rtB.TmpSignalConversionAtSFunctio_c[7] = rtB.Integrator10;
+    rtB.TmpSignalConversionAtSFunctio_c[8] = rtB.Integrator4;
+    rtB.TmpSignalConversionAtSFunctio_c[9] = rtB.Integrator9;
+    rtB.TmpSignalConversionAtSFunctio_c[10] = rtB.Integrator5;
+    rtB.TmpSignalConversionAtSFunctio_c[11] = rtB.Integrator11;
+    memcpy(&rtB.TmpSignalConversionAtSFunctio_c[12], &rtB.SFunction[0], 24U * sizeof(real_T));
+    rtB.TmpSignalConversionAtSFunctio_c[36] = rtB.TransferFcn;
+    rtB.TmpSignalConversionAtSFunctio_c[37] = rtB.TransferFcn_k;
+    rtB.TmpSignalConversionAtSFunctio_c[38] = rtB.TransferFcn_g;
+    rtB.TmpSignalConversionAtSFunctio_c[39] = rtB.TransferFcn_ke;
+    rtB.TmpSignalConversionAtSFunctio_c[40] = rtb_DataStoreRead5;
+%<tlcOutputsFcnOfS0B14>\
+    /* DataStoreWrite: '<Root>/Data Store Write1' */
+    rtDW.Om_old = rtB.SFunction_m[13];
+    /* TransferFcn: '<S9>/roll' */
+    rtB.roll_g = 0.0;
+    rtB.roll_g += rtP.roll_C[0] * rtX.roll_CSTATE[0];
+    rtB.roll_g += rtP.roll_C[1] * rtX.roll_CSTATE[1];
+    /* TransferFcn: '<S9>/pitch' */
+    rtB.pitch_d = 0.0;
+    rtB.pitch_d += rtP.pitch_C[0] * rtX.pitch_CSTATE[0];
+    rtB.pitch_d += rtP.pitch_C[1] * rtX.pitch_CSTATE[1];
+    /* TransferFcn: '<S9>/yaw' */
+    rtB.yaw_g = 0.0;
+    rtB.yaw_g += rtP.yaw_C[0] * rtX.yaw_CSTATE[0];
+    rtB.yaw_g += rtP.yaw_C[1] * rtX.yaw_CSTATE[1];
+    /* TransferFcn: '<S9>/z' */
+    rtB.z_g = 0.0;
+    rtB.z_g += rtP.z_C[0] * rtX.z_CSTATE[0];
+    rtB.z_g += rtP.z_C[1] * rtX.z_CSTATE[1];
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Memory: '<S6>/Memory' */
+    rtB.Memory[0] = rtDW.Memory_PreviousInput[0];
+    rtB.Memory[1] = rtDW.Memory_PreviousInput[1];
+    rtB.Memory[2] = rtDW.Memory_PreviousInput[2];
+    rtB.Memory[3] = rtDW.Memory_PreviousInput[3];
+    /* Memory: '<S6>/Memory1' */
+    memcpy(&rtB.Memory1[0], &rtDW.Memory1_PreviousInput[0], 12U * sizeof(real_T));
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+    /* DataStoreRead: '<S6>/Data Store Read1' */
+    memcpy(&rtB.DataStoreRead1[0], &rtDW.nn_params[0], 4952U * sizeof(real_T));
+    /* DataStoreRead: '<S6>/Data Store Read3' */
+    rtb_DataStoreRead3[0] = rtDW.plant[0];
+    rtb_DataStoreRead3[1] = rtDW.plant[1];
+    rtb_DataStoreRead3[2] = rtDW.plant[2];
+    /* DataStoreRead: '<S6>/Data Store Read4' */
+    rtb_DataStoreRead6[0] = rtDW.controller[0];
+    rtb_DataStoreRead6[1] = rtDW.controller[1];
+    rtb_DataStoreRead6[2] = rtDW.controller[2];
+    /* DataStoreRead: '<S6>/Data Store Read5' */
+    rtb_DataStoreRead5 = rtDW.alpha;
+%<tlcOutputsFcnOfS0B15>\
+    for (i = 0; i < 4952; i++) {
+        /* DataStoreWrite: '<S6>/Data Store Write1' */
+        rtDW.nn_params[i] = rtB.OnlineLearning[i];
+        /* DataStoreRead: '<S6>/Data Store Read2' */
+        rtB.DataStoreRead2[i] = rtDW.nn_params[i];
+    }
+    /* DataStoreRead: '<S6>/Data Store Read' */
+    rtb_DataStoreRead6[0] = rtDW.controller[0];
+    rtb_DataStoreRead6[1] = rtDW.controller[1];
+    rtb_DataStoreRead6[2] = rtDW.controller[2];
+%<tlcOutputsFcnOfS0B16>\
+    /* DataStoreRead: '<S6>/Data Store Read6' */
+    rtb_DataStoreRead6[0] = rtDW.plant[0];
+    rtb_DataStoreRead6[1] = rtDW.plant[1];
+    rtb_DataStoreRead6[2] = rtDW.plant[2];
+%<tlcOutputsFcnOfS0B17>\
+    /* DataStoreWrite: '<S6>/pred_states' */
+    rtDW.pred_states[0] = rtb_PlantModelNN[0];
+    rtDW.pred_states[1] = rtb_PlantModelNN[1];
+    rtDW.pred_states[2] = rtb_PlantModelNN[2];
+    rtDW.pred_states[3] = rtb_PlantModelNN[3];
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+%<tlcOutputsFcnOfS0B18>\
+%<tlcOutputsFcnOfS0B19>\
+%<tlcOutputsFcnOfS0B20>\
+    /* DataStoreRead: '<S6>/Data Store Read9' */
+    rtB.DataStoreRead9[0] = rtDW.pred_states[0];
+    rtB.DataStoreRead9[1] = rtDW.pred_states[1];
+    rtB.DataStoreRead9[2] = rtDW.pred_states[2];
+    rtB.DataStoreRead9[3] = rtDW.pred_states[3];
+%<tlcOutputsFcnOfS0B21>\
+%<tlcOutputsFcnOfS0B22>\
+%<tlcOutputsFcnOfS0B23>\
+%<tlcOutputsFcnOfS0B24>\
+%<tlcOutputsFcnOfS0B25>\
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B26>\
+%<tlcOutputsFcnOfS0B27>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+%<tlcOutputsFcnOfS0B28>\
+%<tlcOutputsFcnOfS0B29>\
+%<tlcOutputsFcnOfS0B30>\
+%<tlcOutputsFcnOfS0B31>\
+%<tlcOutputsFcnOfS0B32>\
+%<tlcOutputsFcnOfS0B33>\
+%<tlcOutputsFcnOfS0B34>\
+%<tlcOutputsFcnOfS0B35>\
+%<tlcOutputsFcnOfS0B36>\
+%<tlcOutputsFcnOfS0B37>\
+%<tlcOutputsFcnOfS0B38>\
+%<tlcOutputsFcnOfS0B39>\
+%<tlcOutputsFcnOfS0B40>\
+%<tlcOutputsFcnOfS0B41>\
+%<tlcOutputsFcnOfS0B42>\
+}
+if (%<(SLibCGIRIsSampleHit(2, 0))>) {
+    /* DataStoreRead: '<Root>/Data Store Read' */
+    rtb_DataStoreRead = rtDW.countervariable67;
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B43>\
+}
+if (%<(SLibCGIRIsSampleHit(2, 0))>) {
+%<tlcOutputsFcnOfS0B44>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Memory: '<Root>/Memory' */
+    rtB.Memory_c = rtDW.Memory_PreviousInput_d;
+%<tlcOutputsFcnOfS0B45>\
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcOutputsFcnOfS0B46>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+%<tlcOutputsFcnOfS0B47>\
+%<tlcOutputsFcnOfS0B48>\
+%<tlcOutputsFcnOfS0B49>\
+%<tlcOutputsFcnOfS0B50>\
+%<tlcOutputsFcnOfS0B51>\
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+    /* SignalConversion: '<S20>/TmpSignal ConversionAtS-FunctionInport1' */
+    rtB.TmpSignalConversionAtSFuncti_ci[0] = rtB.SFunction_k[0];
+    rtB.TmpSignalConversionAtSFuncti_ci[1] = rtB.Memory_c;
+%<tlcOutputsFcnOfS0B52>\
+    /* SignalConversion: '<S21>/TmpSignal ConversionAtS-FunctionInport1' */
+    rtB.TmpSignalConversionAtSFunct_cib[0] = rtB.SFunction_k[1];
+    rtB.TmpSignalConversionAtSFunct_cib[1] = rtB.Memory_c;
+%<tlcOutputsFcnOfS0B53>\
+    /* SignalConversion: '<S22>/TmpSignal ConversionAtS-FunctionInport1' */
+    rtB.TmpSignalConversionAtSFunc_cibi[0] = rtB.SFunction_k[2];
+    rtB.TmpSignalConversionAtSFunc_cibi[1] = rtB.Memory_c;
+%<tlcOutputsFcnOfS0B54>\
+    /* SignalConversion: '<S23>/TmpSignal ConversionAtS-FunctionInport1' */
+    rtB.TmpSignalConversionAtSFun_cibif[0] = rtB.SFunction_k[3];
+    rtB.TmpSignalConversionAtSFun_cibif[1] = rtB.Memory_c;
+%<tlcOutputsFcnOfS0B55>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+%<tlcOutputsFcnOfS0B56>\
+}
+%<SLibInsertSolverResetCode()>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<comma>int32_T tid\
+%assign comma = ", "
+%endif
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction

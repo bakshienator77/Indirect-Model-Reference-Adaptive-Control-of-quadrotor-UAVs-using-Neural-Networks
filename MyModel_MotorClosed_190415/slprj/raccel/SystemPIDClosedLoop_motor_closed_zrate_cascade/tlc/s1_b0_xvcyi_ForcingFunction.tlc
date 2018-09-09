@@ -1,0 +1,76 @@
+%implements s1_b0_xvcyi_ForcingFunction "C"
+
+%function ForcingFunction(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+XDot *_rtXdot;
+%closefile localVarDecl
+%assign tlcForcingFunctionFcnOfS1B0 = OpaqueTLCBlockFcn("ForcingFunction", 1, 0, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B1 = OpaqueTLCBlockFcn("ForcingFunction", 1, 1, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B2 = OpaqueTLCBlockFcn("ForcingFunction", 1, 2, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B3 = OpaqueTLCBlockFcn("ForcingFunction", 1, 3, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B4 = OpaqueTLCBlockFcn("ForcingFunction", 1, 4, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B5 = OpaqueTLCBlockFcn("ForcingFunction", 1, 5, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B6 = OpaqueTLCBlockFcn("ForcingFunction", 1, 6, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B7 = OpaqueTLCBlockFcn("ForcingFunction", 1, 7, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B8 = OpaqueTLCBlockFcn("ForcingFunction", 1, 8, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B9 = OpaqueTLCBlockFcn("ForcingFunction", 1, 9, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B10 = OpaqueTLCBlockFcn("ForcingFunction", 1, 10, 0, 5)
+%assign tlcForcingFunctionFcnOfS1B11 = OpaqueTLCBlockFcn("ForcingFunction", 1, 11, 0, 5)
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+%<tlcForcingFunctionFcnOfS1B0>\
+%<tlcForcingFunctionFcnOfS1B1>\
+%<tlcForcingFunctionFcnOfS1B2>\
+%<tlcForcingFunctionFcnOfS1B3>\
+%<tlcForcingFunctionFcnOfS1B4>\
+%<tlcForcingFunctionFcnOfS1B5>\
+%<tlcForcingFunctionFcnOfS1B6>\
+%<tlcForcingFunctionFcnOfS1B7>\
+%<tlcForcingFunctionFcnOfS1B8>\
+%<tlcForcingFunctionFcnOfS1B9>\
+%<tlcForcingFunctionFcnOfS1B10>\
+%<tlcForcingFunctionFcnOfS1B11>\
+_rtXdot->fgfapvxv0b = 0.0;
+_rtXdot->fgfapvxv0b += rtP.TransferFcn_A * rtX.fgfapvxv0b;
+_rtXdot->fgfapvxv0b += rtB.gbtcus1qzo;
+_rtXdot->f4vt13on44 = 0.0;
+_rtXdot->f4vt13on44 += rtP.TransferFcn_A_bfampfbxci * rtX.f4vt13on44;
+_rtXdot->f4vt13on44 += rtB.m3gnxyi0qm;
+_rtXdot->nhv5zrchlv = 0.0;
+_rtXdot->nhv5zrchlv += rtP.TransferFcn_A_a2v5faoeql * rtX.nhv5zrchlv;
+_rtXdot->nhv5zrchlv += rtB.h2303q4uio;
+_rtXdot->aln1ucy2xy = 0.0;
+_rtXdot->aln1ucy2xy += rtP.TransferFcn_A_d3evhftvqn * rtX.aln1ucy2xy;
+_rtXdot->aln1ucy2xy += rtB.bbb1hox35u;
+_rtXdot->p40g4detwi[0] = 0.0;
+_rtXdot->p40g4detwi[1] = 0.0;
+_rtXdot->p40g4detwi[0U] += rtP.roll_A[0] * rtX.p40g4detwi[0];
+_rtXdot->p40g4detwi[0U] += rtP.roll_A[1] * rtX.p40g4detwi[1];
+_rtXdot->p40g4detwi[1] += rtX.p40g4detwi[0];
+_rtXdot->p40g4detwi[0U] += rtB.ozbz5gubyy[0];
+_rtXdot->mqjchgz4oq[0] = 0.0;
+_rtXdot->mqjchgz4oq[1] = 0.0;
+_rtXdot->mqjchgz4oq[0U] += rtP.pitch_A[0] * rtX.mqjchgz4oq[0];
+_rtXdot->mqjchgz4oq[0U] += rtP.pitch_A[1] * rtX.mqjchgz4oq[1];
+_rtXdot->mqjchgz4oq[1] += rtX.mqjchgz4oq[0];
+_rtXdot->mqjchgz4oq[0U] += rtB.ozbz5gubyy[1];
+_rtXdot->a1icmnjoge[0] = 0.0;
+_rtXdot->a1icmnjoge[1] = 0.0;
+_rtXdot->a1icmnjoge[0U] += rtP.yaw_A[0] * rtX.a1icmnjoge[0];
+_rtXdot->a1icmnjoge[0U] += rtP.yaw_A[1] * rtX.a1icmnjoge[1];
+_rtXdot->a1icmnjoge[1] += rtX.a1icmnjoge[0];
+_rtXdot->a1icmnjoge[0U] += rtB.ozbz5gubyy[2];
+_rtXdot->ivhgvql01s[0] = 0.0;
+_rtXdot->ivhgvql01s[1] = 0.0;
+_rtXdot->ivhgvql01s[0U] += rtP.z_A[0] * rtX.ivhgvql01s[0];
+_rtXdot->ivhgvql01s[0U] += rtP.z_A[1] * rtX.ivhgvql01s[1];
+_rtXdot->ivhgvql01s[1] += rtX.ivhgvql01s[0];
+_rtXdot->ivhgvql01s[0U] += rtB.ozbz5gubyy[3];
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ForcingFunction(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 5, fcnProtoType)>
+%<LibSetSystemField(system, "CachedForcingFunctionLocalVars", localVarDecl)>
+%endfunction

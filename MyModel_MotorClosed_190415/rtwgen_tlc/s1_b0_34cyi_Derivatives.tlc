@@ -1,0 +1,84 @@
+%implements s1_b0_34cyi_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+XDot *_rtXdot;
+%closefile localVarDecl
+%assign tlcDerivativesFcnOfS0B0 = OpaqueTLCBlockFcn("Derivatives", 0, 0, 0, 4)
+%assign tlcDerivativesFcnOfS0B1 = OpaqueTLCBlockFcn("Derivatives", 0, 1, 0, 4)
+%assign tlcDerivativesFcnOfS0B2 = OpaqueTLCBlockFcn("Derivatives", 0, 2, 0, 4)
+%assign tlcDerivativesFcnOfS0B3 = OpaqueTLCBlockFcn("Derivatives", 0, 3, 0, 4)
+%assign tlcDerivativesFcnOfS0B4 = OpaqueTLCBlockFcn("Derivatives", 0, 4, 0, 4)
+%assign tlcDerivativesFcnOfS0B5 = OpaqueTLCBlockFcn("Derivatives", 0, 5, 0, 4)
+%assign tlcDerivativesFcnOfS0B6 = OpaqueTLCBlockFcn("Derivatives", 0, 6, 0, 4)
+%assign tlcDerivativesFcnOfS0B7 = OpaqueTLCBlockFcn("Derivatives", 0, 7, 0, 4)
+%assign tlcDerivativesFcnOfS0B8 = OpaqueTLCBlockFcn("Derivatives", 0, 8, 0, 4)
+%assign tlcDerivativesFcnOfS0B9 = OpaqueTLCBlockFcn("Derivatives", 0, 9, 0, 4)
+%assign tlcDerivativesFcnOfS0B10 = OpaqueTLCBlockFcn("Derivatives", 0, 10, 0, 4)
+%assign tlcDerivativesFcnOfS0B11 = OpaqueTLCBlockFcn("Derivatives", 0, 11, 0, 4)
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+%<tlcDerivativesFcnOfS0B0>\
+%<tlcDerivativesFcnOfS0B1>\
+%<tlcDerivativesFcnOfS0B2>\
+%<tlcDerivativesFcnOfS0B3>\
+%<tlcDerivativesFcnOfS0B4>\
+%<tlcDerivativesFcnOfS0B5>\
+%<tlcDerivativesFcnOfS0B6>\
+%<tlcDerivativesFcnOfS0B7>\
+%<tlcDerivativesFcnOfS0B8>\
+%<tlcDerivativesFcnOfS0B9>\
+%<tlcDerivativesFcnOfS0B10>\
+%<tlcDerivativesFcnOfS0B11>\
+/* Derivatives for TransferFcn: '<S20>/Transfer Fcn' */
+_rtXdot->TransferFcn_CSTATE = 0.0;
+_rtXdot->TransferFcn_CSTATE += rtP.TransferFcn_A * rtX.TransferFcn_CSTATE;
+_rtXdot->TransferFcn_CSTATE += rtB.SFunction_h;
+/* Derivatives for TransferFcn: '<S21>/Transfer Fcn' */
+_rtXdot->TransferFcn_CSTATE_f = 0.0;
+_rtXdot->TransferFcn_CSTATE_f += rtP.TransferFcn_A_b * rtX.TransferFcn_CSTATE_f;
+_rtXdot->TransferFcn_CSTATE_f += rtB.SFunction_n;
+/* Derivatives for TransferFcn: '<S22>/Transfer Fcn' */
+_rtXdot->TransferFcn_CSTATE_h = 0.0;
+_rtXdot->TransferFcn_CSTATE_h += rtP.TransferFcn_A_a * rtX.TransferFcn_CSTATE_h;
+_rtXdot->TransferFcn_CSTATE_h += rtB.SFunction_i;
+/* Derivatives for TransferFcn: '<S23>/Transfer Fcn' */
+_rtXdot->TransferFcn_CSTATE_d = 0.0;
+_rtXdot->TransferFcn_CSTATE_d += rtP.TransferFcn_A_d * rtX.TransferFcn_CSTATE_d;
+_rtXdot->TransferFcn_CSTATE_d += rtB.SFunction_b;
+/* Derivatives for TransferFcn: '<S9>/roll' */
+_rtXdot->roll_CSTATE[0] = 0.0;
+_rtXdot->roll_CSTATE[1] = 0.0;
+_rtXdot->roll_CSTATE[0U] += rtP.roll_A[0] * rtX.roll_CSTATE[0];
+_rtXdot->roll_CSTATE[0U] += rtP.roll_A[1] * rtX.roll_CSTATE[1];
+_rtXdot->roll_CSTATE[1] += rtX.roll_CSTATE[0];
+_rtXdot->roll_CSTATE[0U] += rtB.RateTransition5[0];
+/* Derivatives for TransferFcn: '<S9>/pitch' */
+_rtXdot->pitch_CSTATE[0] = 0.0;
+_rtXdot->pitch_CSTATE[1] = 0.0;
+_rtXdot->pitch_CSTATE[0U] += rtP.pitch_A[0] * rtX.pitch_CSTATE[0];
+_rtXdot->pitch_CSTATE[0U] += rtP.pitch_A[1] * rtX.pitch_CSTATE[1];
+_rtXdot->pitch_CSTATE[1] += rtX.pitch_CSTATE[0];
+_rtXdot->pitch_CSTATE[0U] += rtB.RateTransition5[1];
+/* Derivatives for TransferFcn: '<S9>/yaw' */
+_rtXdot->yaw_CSTATE[0] = 0.0;
+_rtXdot->yaw_CSTATE[1] = 0.0;
+_rtXdot->yaw_CSTATE[0U] += rtP.yaw_A[0] * rtX.yaw_CSTATE[0];
+_rtXdot->yaw_CSTATE[0U] += rtP.yaw_A[1] * rtX.yaw_CSTATE[1];
+_rtXdot->yaw_CSTATE[1] += rtX.yaw_CSTATE[0];
+_rtXdot->yaw_CSTATE[0U] += rtB.RateTransition5[2];
+/* Derivatives for TransferFcn: '<S9>/z' */
+_rtXdot->z_CSTATE[0] = 0.0;
+_rtXdot->z_CSTATE[1] = 0.0;
+_rtXdot->z_CSTATE[0U] += rtP.z_A[0] * rtX.z_CSTATE[0];
+_rtXdot->z_CSTATE[0U] += rtP.z_A[1] * rtX.z_CSTATE[1];
+_rtXdot->z_CSTATE[1] += rtX.z_CSTATE[0];
+_rtXdot->z_CSTATE[0U] += rtB.RateTransition5[3];
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%<LibSetSystemField(system, "CachedDerivativeLocalVars", localVarDecl)>
+%endfunction

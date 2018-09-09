@@ -1,0 +1,90 @@
+%implements s1_b0_34cyi_Update "C"
+
+%function Update(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+int32_T i;
+%closefile localVarDecl
+%assign tlcUpdateFcnOfS0B0 = OpaqueTLCBlockFcn("Update", 0, 0, 0, 3)
+%assign tlcUpdateFcnOfS0B1 = OpaqueTLCBlockFcn("Update", 0, 1, 0, 3)
+%assign tlcUpdateFcnOfS0B2 = OpaqueTLCBlockFcn("Update", 0, 2, 0, 3)
+%assign tlcUpdateFcnOfS0B3 = OpaqueTLCBlockFcn("Update", 0, 3, 0, 3)
+%assign tlcUpdateFcnOfS0B4 = OpaqueTLCBlockFcn("Update", 0, 4, 0, 3)
+%assign tlcUpdateFcnOfS0B5 = OpaqueTLCBlockFcn("Update", 0, 5, 0, 3)
+%assign tlcUpdateFcnOfS0B6 = OpaqueTLCBlockFcn("Update", 0, 6, 0, 3)
+%assign tlcUpdateFcnOfS0B7 = OpaqueTLCBlockFcn("Update", 0, 7, 0, 3)
+%assign tlcUpdateFcnOfS0B8 = OpaqueTLCBlockFcn("Update", 0, 8, 0, 3)
+%assign tlcUpdateFcnOfS0B9 = OpaqueTLCBlockFcn("Update", 0, 9, 0, 3)
+%assign tlcUpdateFcnOfS0B10 = OpaqueTLCBlockFcn("Update", 0, 10, 0, 3)
+%assign tlcUpdateFcnOfS0B11 = OpaqueTLCBlockFcn("Update", 0, 11, 0, 3)
+%assign tlcUpdateFcnOfS0B13 = OpaqueTLCBlockFcn("Update", 0, 13, 0, 3)
+%assign tlcUpdateFcnOfS0B14 = OpaqueTLCBlockFcn("Update", 0, 14, 0, 3)
+%assign tlcUpdateFcnOfS0B46 = OpaqueTLCBlockFcn("Update", 0, 46, 0, 3)
+%assign tlcUpdateFcnOfS0B52 = OpaqueTLCBlockFcn("Update", 0, 52, 0, 3)
+%assign tlcUpdateFcnOfS0B53 = OpaqueTLCBlockFcn("Update", 0, 53, 0, 3)
+%assign tlcUpdateFcnOfS0B54 = OpaqueTLCBlockFcn("Update", 0, 54, 0, 3)
+%assign tlcUpdateFcnOfS0B55 = OpaqueTLCBlockFcn("Update", 0, 55, 0, 3)
+/* Update for RateTransition: '<Root>/Rate Transition5' */
+if (%<(SLibCGIRIsSampleHit(2, 0))>) {
+    for (i = 0; i < 5; i++) {
+        rtDW.RateTransition5_Buffer0[i] = rtB.InterpretedMATLABFunction1[i];
+    }
+}
+/* End of Update for RateTransition: '<Root>/Rate Transition5' */
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcUpdateFcnOfS0B0>\
+%<tlcUpdateFcnOfS0B1>\
+%<tlcUpdateFcnOfS0B2>\
+%<tlcUpdateFcnOfS0B3>\
+%<tlcUpdateFcnOfS0B4>\
+%<tlcUpdateFcnOfS0B5>\
+%<tlcUpdateFcnOfS0B6>\
+%<tlcUpdateFcnOfS0B7>\
+%<tlcUpdateFcnOfS0B8>\
+%<tlcUpdateFcnOfS0B9>\
+%<tlcUpdateFcnOfS0B10>\
+%<tlcUpdateFcnOfS0B11>\
+%<tlcUpdateFcnOfS0B13>\
+%<tlcUpdateFcnOfS0B14>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+    /* Update for Memory: '<S6>/Memory' */
+    rtDW.Memory_PreviousInput[0] = rtB.DataStoreRead9[0];
+    rtDW.Memory_PreviousInput[1] = rtB.DataStoreRead9[1];
+    rtDW.Memory_PreviousInput[2] = rtB.DataStoreRead9[2];
+    rtDW.Memory_PreviousInput[3] = rtB.DataStoreRead9[3];
+    /* Update for Memory: '<S6>/Memory1' */
+    rtDW.Memory1_PreviousInput[0] = rtB.Integrator;
+    rtDW.Memory1_PreviousInput[1] = rtB.Integrator6;
+    rtDW.Memory1_PreviousInput[2] = rtB.Integrator1;
+    rtDW.Memory1_PreviousInput[3] = rtB.Integrator7;
+    rtDW.Memory1_PreviousInput[4] = rtB.Integrator2;
+    rtDW.Memory1_PreviousInput[5] = rtB.Integrator8;
+    rtDW.Memory1_PreviousInput[6] = rtB.Integrator3;
+    rtDW.Memory1_PreviousInput[7] = rtB.Integrator10;
+    rtDW.Memory1_PreviousInput[8] = rtB.Integrator4;
+    rtDW.Memory1_PreviousInput[9] = rtB.Integrator9;
+    rtDW.Memory1_PreviousInput[10] = rtB.Integrator5;
+    rtDW.Memory1_PreviousInput[11] = rtB.Integrator11;
+    /* Update for Memory: '<Root>/Memory' */
+    rtDW.Memory_PreviousInput_d = rtB.SFunction[25];
+}
+if (%<(SLibCGIRIsSampleHit(0, 0))>) {
+%<tlcUpdateFcnOfS0B46>\
+%<tlcUpdateFcnOfS0B52>\
+%<tlcUpdateFcnOfS0B53>\
+%<tlcUpdateFcnOfS0B54>\
+%<tlcUpdateFcnOfS0B55>\
+}
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 3, 0)
+%<comma>int32_T tid\
+%assign comma = ", "
+%endif
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%<LibSetSystemField(system, "CachedUpdateLocalVars", localVarDecl)>
+%endfunction

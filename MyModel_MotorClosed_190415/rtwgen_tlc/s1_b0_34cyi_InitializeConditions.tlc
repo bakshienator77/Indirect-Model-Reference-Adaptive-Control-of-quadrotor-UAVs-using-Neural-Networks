@@ -1,0 +1,93 @@
+%implements s1_b0_34cyi_InitializeConditions "C"
+
+%function InitializeConditions(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+int32_T i;
+%closefile localVarDecl
+%assign tlcInitializeConditionsFcnOfS0B0 = OpaqueTLCBlockFcn("InitializeConditions", 0, 0, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B1 = OpaqueTLCBlockFcn("InitializeConditions", 0, 1, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B2 = OpaqueTLCBlockFcn("InitializeConditions", 0, 2, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B3 = OpaqueTLCBlockFcn("InitializeConditions", 0, 3, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B4 = OpaqueTLCBlockFcn("InitializeConditions", 0, 4, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B5 = OpaqueTLCBlockFcn("InitializeConditions", 0, 5, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B6 = OpaqueTLCBlockFcn("InitializeConditions", 0, 6, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B7 = OpaqueTLCBlockFcn("InitializeConditions", 0, 7, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B8 = OpaqueTLCBlockFcn("InitializeConditions", 0, 8, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B9 = OpaqueTLCBlockFcn("InitializeConditions", 0, 9, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B10 = OpaqueTLCBlockFcn("InitializeConditions", 0, 10, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B11 = OpaqueTLCBlockFcn("InitializeConditions", 0, 11, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B13 = OpaqueTLCBlockFcn("InitializeConditions", 0, 13, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B14 = OpaqueTLCBlockFcn("InitializeConditions", 0, 14, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B46 = OpaqueTLCBlockFcn("InitializeConditions", 0, 46, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B52 = OpaqueTLCBlockFcn("InitializeConditions", 0, 52, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B53 = OpaqueTLCBlockFcn("InitializeConditions", 0, 53, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B54 = OpaqueTLCBlockFcn("InitializeConditions", 0, 54, 0, 1)
+%assign tlcInitializeConditionsFcnOfS0B55 = OpaqueTLCBlockFcn("InitializeConditions", 0, 55, 0, 1)
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+/* InitializeConditions for RateTransition: '<Root>/Rate Transition5' */
+for (i = 0; i < 5; i++) {
+    rtDW.RateTransition5_Buffer0[i] = rtP.RateTransition5_X0;
+}
+/* End of InitializeConditions for RateTransition: '<Root>/Rate Transition5' */
+%<tlcInitializeConditionsFcnOfS0B0>\
+%<tlcInitializeConditionsFcnOfS0B1>\
+%<tlcInitializeConditionsFcnOfS0B2>\
+%<tlcInitializeConditionsFcnOfS0B3>\
+%<tlcInitializeConditionsFcnOfS0B4>\
+%<tlcInitializeConditionsFcnOfS0B5>\
+%<tlcInitializeConditionsFcnOfS0B6>\
+%<tlcInitializeConditionsFcnOfS0B7>\
+%<tlcInitializeConditionsFcnOfS0B8>\
+%<tlcInitializeConditionsFcnOfS0B9>\
+%<tlcInitializeConditionsFcnOfS0B10>\
+%<tlcInitializeConditionsFcnOfS0B11>\
+/* InitializeConditions for TransferFcn: '<S20>/Transfer Fcn' */
+rtX.TransferFcn_CSTATE = 0.0;
+/* InitializeConditions for TransferFcn: '<S21>/Transfer Fcn' */
+rtX.TransferFcn_CSTATE_f = 0.0;
+/* InitializeConditions for TransferFcn: '<S22>/Transfer Fcn' */
+rtX.TransferFcn_CSTATE_h = 0.0;
+/* InitializeConditions for TransferFcn: '<S23>/Transfer Fcn' */
+rtX.TransferFcn_CSTATE_d = 0.0;
+%<tlcInitializeConditionsFcnOfS0B13>\
+%<tlcInitializeConditionsFcnOfS0B14>\
+/* InitializeConditions for TransferFcn: '<S9>/roll' */
+rtX.roll_CSTATE[0] = 0.0;
+rtX.roll_CSTATE[1] = 0.0;
+/* InitializeConditions for TransferFcn: '<S9>/pitch' */
+rtX.pitch_CSTATE[0] = 0.0;
+rtX.pitch_CSTATE[1] = 0.0;
+/* InitializeConditions for TransferFcn: '<S9>/yaw' */
+rtX.yaw_CSTATE[0] = 0.0;
+rtX.yaw_CSTATE[1] = 0.0;
+/* InitializeConditions for TransferFcn: '<S9>/z' */
+rtX.z_CSTATE[0] = 0.0;
+rtX.z_CSTATE[1] = 0.0;
+/* InitializeConditions for Memory: '<S6>/Memory' */
+rtDW.Memory_PreviousInput[0] = rtP.Memory_X0;
+rtDW.Memory_PreviousInput[1] = rtP.Memory_X0;
+rtDW.Memory_PreviousInput[2] = rtP.Memory_X0;
+rtDW.Memory_PreviousInput[3] = rtP.Memory_X0;
+/* InitializeConditions for Memory: '<S6>/Memory1' */
+for (i = 0; i < 12; i++) {
+    rtDW.Memory1_PreviousInput[i] = rtP.Memory1_X0;
+}
+/* End of InitializeConditions for Memory: '<S6>/Memory1' */
+
+/* InitializeConditions for Memory: '<Root>/Memory' */
+rtDW.Memory_PreviousInput_d = rtP.Memory_X0_m;
+%<tlcInitializeConditionsFcnOfS0B46>\
+%<tlcInitializeConditionsFcnOfS0B52>\
+%<tlcInitializeConditionsFcnOfS0B53>\
+%<tlcInitializeConditionsFcnOfS0B54>\
+%<tlcInitializeConditionsFcnOfS0B55>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void InitializeConditions(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%<LibSetSystemField(system, "CachedInitializeLocalVars", localVarDecl)>
+%endfunction

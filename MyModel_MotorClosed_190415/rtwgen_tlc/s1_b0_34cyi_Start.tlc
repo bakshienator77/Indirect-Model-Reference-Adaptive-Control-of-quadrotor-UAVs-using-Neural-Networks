@@ -1,0 +1,142 @@
+%implements s1_b0_34cyi_Start "C"
+
+%function Start(block, system) Output
+%assign localVarDecl = ""
+%openfile localVarDecl
+int32_T i;
+%closefile localVarDecl
+%assign tlcStartFcnOfS0B13 = OpaqueTLCBlockFcn("Start", 0, 13, 0, 0)
+%assign tlcStartFcnOfS0B14 = OpaqueTLCBlockFcn("Start", 0, 14, 0, 0)
+%assign tlcStartFcnOfS0B18 = OpaqueTLCBlockFcn("Start", 0, 18, 0, 0)
+%assign tlcStartFcnOfS0B19 = OpaqueTLCBlockFcn("Start", 0, 19, 0, 0)
+%assign tlcStartFcnOfS0B20 = OpaqueTLCBlockFcn("Start", 0, 20, 0, 0)
+%assign tlcStartFcnOfS0B21 = OpaqueTLCBlockFcn("Start", 0, 21, 0, 0)
+%assign tlcStartFcnOfS0B22 = OpaqueTLCBlockFcn("Start", 0, 22, 0, 0)
+%assign tlcStartFcnOfS0B23 = OpaqueTLCBlockFcn("Start", 0, 23, 0, 0)
+%assign tlcStartFcnOfS0B24 = OpaqueTLCBlockFcn("Start", 0, 24, 0, 0)
+%assign tlcStartFcnOfS0B25 = OpaqueTLCBlockFcn("Start", 0, 25, 0, 0)
+%assign tlcStartFcnOfS0B28 = OpaqueTLCBlockFcn("Start", 0, 28, 0, 0)
+%assign tlcStartFcnOfS0B29 = OpaqueTLCBlockFcn("Start", 0, 29, 0, 0)
+%assign tlcStartFcnOfS0B30 = OpaqueTLCBlockFcn("Start", 0, 30, 0, 0)
+%assign tlcStartFcnOfS0B31 = OpaqueTLCBlockFcn("Start", 0, 31, 0, 0)
+%assign tlcStartFcnOfS0B32 = OpaqueTLCBlockFcn("Start", 0, 32, 0, 0)
+%assign tlcStartFcnOfS0B33 = OpaqueTLCBlockFcn("Start", 0, 33, 0, 0)
+%assign tlcStartFcnOfS0B34 = OpaqueTLCBlockFcn("Start", 0, 34, 0, 0)
+%assign tlcStartFcnOfS0B35 = OpaqueTLCBlockFcn("Start", 0, 35, 0, 0)
+%assign tlcStartFcnOfS0B36 = OpaqueTLCBlockFcn("Start", 0, 36, 0, 0)
+%assign tlcStartFcnOfS0B37 = OpaqueTLCBlockFcn("Start", 0, 37, 0, 0)
+%assign tlcStartFcnOfS0B38 = OpaqueTLCBlockFcn("Start", 0, 38, 0, 0)
+%assign tlcStartFcnOfS0B39 = OpaqueTLCBlockFcn("Start", 0, 39, 0, 0)
+%assign tlcStartFcnOfS0B40 = OpaqueTLCBlockFcn("Start", 0, 40, 0, 0)
+%assign tlcStartFcnOfS0B41 = OpaqueTLCBlockFcn("Start", 0, 41, 0, 0)
+%assign tlcStartFcnOfS0B42 = OpaqueTLCBlockFcn("Start", 0, 42, 0, 0)
+%assign tlcStartFcnOfS0B45 = OpaqueTLCBlockFcn("Start", 0, 45, 0, 0)
+%assign tlcStartFcnOfS0B46 = OpaqueTLCBlockFcn("Start", 0, 46, 0, 0)
+%assign tlcStartFcnOfS0B47 = OpaqueTLCBlockFcn("Start", 0, 47, 0, 0)
+%assign tlcStartFcnOfS0B48 = OpaqueTLCBlockFcn("Start", 0, 48, 0, 0)
+%assign tlcStartFcnOfS0B49 = OpaqueTLCBlockFcn("Start", 0, 49, 0, 0)
+%assign tlcStartFcnOfS0B50 = OpaqueTLCBlockFcn("Start", 0, 50, 0, 0)
+%assign tlcStartFcnOfS0B51 = OpaqueTLCBlockFcn("Start", 0, 51, 0, 0)
+%assign tlcStartFcnOfS0B52 = OpaqueTLCBlockFcn("Start", 0, 52, 0, 0)
+%assign tlcStartFcnOfS0B53 = OpaqueTLCBlockFcn("Start", 0, 53, 0, 0)
+%assign tlcStartFcnOfS0B54 = OpaqueTLCBlockFcn("Start", 0, 54, 0, 0)
+%assign tlcStartFcnOfS0B55 = OpaqueTLCBlockFcn("Start", 0, 55, 0, 0)
+%assign tlcStartFcnOfS0B56 = OpaqueTLCBlockFcn("Start", 0, 56, 0, 0)
+/* Start for RateTransition: '<Root>/Rate Transition5' */
+for (i = 0; i < 5; i++) {
+    rtB.RateTransition5[i] = rtP.RateTransition5_X0;
+}
+/* End of Start for RateTransition: '<Root>/Rate Transition5' */
+
+/* Start for Constant: '<S4>/roll' */
+rtB.roll = rtP.roll_Value;
+/* Start for Constant: '<S4>/dotroll' */
+rtB.dotroll = rtP.dotroll_Value;
+/* Start for Constant: '<S4>/pitch' */
+rtB.pitch = rtP.pitch_Value;
+/* Start for Constant: '<S4>/dotpitch' */
+rtB.dotpitch = rtP.dotpitch_Value;
+/* Start for Constant: '<S4>/yaw' */
+rtB.yaw = rtP.yaw_Value;
+/* Start for Constant: '<S4>/dotyaw' */
+rtB.dotyaw = rtP.dotyaw_Value;
+/* Start for Constant: '<S4>/z' */
+rtB.z = rtP.z_Value;
+/* Start for Constant: '<S4>/dotz' */
+rtB.dotz = rtP.dotz_Value;
+/* Start for Constant: '<S4>/x' */
+rtB.x = rtP.x_Value;
+/* Start for Constant: '<S4>/dotx' */
+rtB.dotx = rtP.dotx_Value;
+/* Start for Constant: '<S4>/y' */
+rtB.y = rtP.y_Value;
+/* Start for Constant: '<S4>/doty' */
+rtB.doty = rtP.doty_Value;
+%<tlcStartFcnOfS0B13>\
+%<tlcStartFcnOfS0B14>\
+%<tlcStartFcnOfS0B18>\
+%<tlcStartFcnOfS0B19>\
+%<tlcStartFcnOfS0B20>\
+/* Start for DataStoreMemory: '<S6>/1 ' */
+memcpy(&rtDW.nn_params[0], &rtP._InitialValue[0], 4952U * sizeof(real_T));
+/* Start for DataStoreMemory: '<S6>/2 ' */
+rtDW.somenumber = rtP._InitialValue_k;
+/* Start for DataStoreMemory: '<S6>/3 ' */
+rtDW.plant[0] = rtP._InitialValue_f[0];
+rtDW.plant[1] = rtP._InitialValue_f[1];
+rtDW.plant[2] = rtP._InitialValue_f[2];
+/* Start for DataStoreMemory: '<S6>/4 ' */
+rtDW.controller[0] = rtP._InitialValue_p[0];
+rtDW.controller[1] = rtP._InitialValue_p[1];
+rtDW.controller[2] = rtP._InitialValue_p[2];
+/* Start for DataStoreMemory: '<S6>/5 ' */
+rtDW.alpha = rtP._InitialValue_b;
+/* Start for DataStoreMemory: '<S6>/6 ' */
+rtDW.pred_states[0] = rtP._InitialValue_o[0];
+rtDW.pred_states[1] = rtP._InitialValue_o[1];
+rtDW.pred_states[2] = rtP._InitialValue_o[2];
+rtDW.pred_states[3] = rtP._InitialValue_o[3];
+%<tlcStartFcnOfS0B21>\
+%<tlcStartFcnOfS0B22>\
+%<tlcStartFcnOfS0B23>\
+%<tlcStartFcnOfS0B24>\
+%<tlcStartFcnOfS0B25>\
+%<tlcStartFcnOfS0B28>\
+%<tlcStartFcnOfS0B29>\
+%<tlcStartFcnOfS0B30>\
+%<tlcStartFcnOfS0B31>\
+%<tlcStartFcnOfS0B32>\
+%<tlcStartFcnOfS0B33>\
+%<tlcStartFcnOfS0B34>\
+%<tlcStartFcnOfS0B35>\
+%<tlcStartFcnOfS0B36>\
+%<tlcStartFcnOfS0B37>\
+%<tlcStartFcnOfS0B38>\
+%<tlcStartFcnOfS0B39>\
+%<tlcStartFcnOfS0B40>\
+%<tlcStartFcnOfS0B41>\
+%<tlcStartFcnOfS0B42>\
+%<tlcStartFcnOfS0B45>\
+%<tlcStartFcnOfS0B46>\
+%<tlcStartFcnOfS0B47>\
+%<tlcStartFcnOfS0B48>\
+%<tlcStartFcnOfS0B49>\
+%<tlcStartFcnOfS0B50>\
+%<tlcStartFcnOfS0B51>\
+%<tlcStartFcnOfS0B52>\
+%<tlcStartFcnOfS0B53>\
+%<tlcStartFcnOfS0B54>\
+%<tlcStartFcnOfS0B55>\
+%<tlcStartFcnOfS0B56>\
+/* Start for DataStoreMemory: '<Root>/Data Store Memory' */
+rtDW.countervariable67 = rtP.DataStoreMemory_InitialValue;
+/* Start for DataStoreMemory: '<Root>/Data Store Memory1' */
+rtDW.Om_old = rtP.DataStoreMemory1_InitialValue;
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%<LibSetSystemField(system, "CachedStartLocalVars", localVarDecl)>
+%endfunction

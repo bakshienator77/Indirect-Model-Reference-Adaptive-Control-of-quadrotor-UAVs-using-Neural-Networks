@@ -1,0 +1,344 @@
+%implements s1_b0_xvcyi_Outputs "C"
+
+%function Outputs(block, system) Output
+%<SLibCGIRAccessLocalVar(5, 0)> %% glh3zydsra
+%<SLibCGIRAccessLocalVar(4, 0)> %% ecdlkesonw
+%<SLibCGIRAccessLocalVar(1, 0)> %% kedihqp5e5
+%<SLibCGIRAccessLocalVar(6, 0)> %% k30sxm53qk
+%<SLibCGIRAccessLocalVar(3, 0)> %% lynfajuhei
+%assign localVarDecl = ""
+%openfile localVarDecl
+real_T currentTime;
+int32_T i;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS1B0 = OpaqueTLCBlockFcn("Outputs", 1, 0, 0, 2)
+%assign tlcOutputsFcnOfS1B1 = OpaqueTLCBlockFcn("Outputs", 1, 1, 0, 2)
+%assign tlcOutputsFcnOfS1B2 = OpaqueTLCBlockFcn("Outputs", 1, 2, 0, 2)
+%assign tlcOutputsFcnOfS1B3 = OpaqueTLCBlockFcn("Outputs", 1, 3, 0, 2)
+%assign tlcOutputsFcnOfS1B4 = OpaqueTLCBlockFcn("Outputs", 1, 4, 0, 2)
+%assign tlcOutputsFcnOfS1B5 = OpaqueTLCBlockFcn("Outputs", 1, 5, 0, 2)
+%assign tlcOutputsFcnOfS1B6 = OpaqueTLCBlockFcn("Outputs", 1, 6, 0, 2)
+%assign tlcOutputsFcnOfS1B7 = OpaqueTLCBlockFcn("Outputs", 1, 7, 0, 2)
+%assign tlcOutputsFcnOfS1B8 = OpaqueTLCBlockFcn("Outputs", 1, 8, 0, 2)
+%assign tlcOutputsFcnOfS1B9 = OpaqueTLCBlockFcn("Outputs", 1, 9, 0, 2)
+%assign tlcOutputsFcnOfS1B10 = OpaqueTLCBlockFcn("Outputs", 1, 10, 0, 2)
+%assign tlcOutputsFcnOfS1B11 = OpaqueTLCBlockFcn("Outputs", 1, 11, 0, 2)
+%assign tlcOutputsFcnOfS1B12 = OpaqueTLCBlockFcn("Outputs", 1, 12, 0, 2)
+%assign tlcOutputsFcnOfS1B13 = OpaqueTLCBlockFcn("Outputs", 1, 13, 0, 2)
+%assign tlcOutputsFcnOfS1B14 = OpaqueTLCBlockFcn("Outputs", 1, 14, 0, 2)
+%assign tlcOutputsFcnOfS1B15 = OpaqueTLCBlockFcn("Outputs", 1, 15, 0, 2)
+%assign tlcOutputsFcnOfS1B16 = OpaqueTLCBlockFcn("Outputs", 1, 16, 0, 2)
+%assign tlcOutputsFcnOfS1B17 = OpaqueTLCBlockFcn("Outputs", 1, 17, 0, 2)
+%assign tlcOutputsFcnOfS1B18 = OpaqueTLCBlockFcn("Outputs", 1, 18, 0, 2)
+%assign tlcOutputsFcnOfS1B19 = OpaqueTLCBlockFcn("Outputs", 1, 19, 0, 2)
+%assign tlcOutputsFcnOfS1B20 = OpaqueTLCBlockFcn("Outputs", 1, 20, 0, 2)
+%assign tlcOutputsFcnOfS1B21 = OpaqueTLCBlockFcn("Outputs", 1, 21, 0, 2)
+%assign tlcOutputsFcnOfS1B22 = OpaqueTLCBlockFcn("Outputs", 1, 22, 0, 2)
+%assign tlcOutputsFcnOfS1B23 = OpaqueTLCBlockFcn("Outputs", 1, 23, 0, 2)
+%assign tlcOutputsFcnOfS1B24 = OpaqueTLCBlockFcn("Outputs", 1, 24, 0, 2)
+%assign tlcOutputsFcnOfS1B25 = OpaqueTLCBlockFcn("Outputs", 1, 25, 0, 2)
+%assign tlcOutputsFcnOfS1B26 = OpaqueTLCBlockFcn("Outputs", 1, 26, 0, 2)
+%assign tlcOutputsFcnOfS1B27 = OpaqueTLCBlockFcn("Outputs", 1, 27, 0, 2)
+%assign tlcOutputsFcnOfS1B29 = OpaqueTLCBlockFcn("Outputs", 1, 29, 0, 2)
+%assign tlcOutputsFcnOfS1B30 = OpaqueTLCBlockFcn("Outputs", 1, 30, 0, 2)
+%assign tlcOutputsFcnOfS1B31 = OpaqueTLCBlockFcn("Outputs", 1, 31, 0, 2)
+%assign tlcOutputsFcnOfS1B32 = OpaqueTLCBlockFcn("Outputs", 1, 32, 0, 2)
+%assign tlcOutputsFcnOfS1B33 = OpaqueTLCBlockFcn("Outputs", 1, 33, 0, 2)
+%assign tlcOutputsFcnOfS1B34 = OpaqueTLCBlockFcn("Outputs", 1, 34, 0, 2)
+%assign tlcOutputsFcnOfS1B35 = OpaqueTLCBlockFcn("Outputs", 1, 35, 0, 2)
+%assign tlcOutputsFcnOfS1B36 = OpaqueTLCBlockFcn("Outputs", 1, 36, 0, 2)
+%assign tlcOutputsFcnOfS1B37 = OpaqueTLCBlockFcn("Outputs", 1, 37, 0, 2)
+%assign tlcOutputsFcnOfS1B38 = OpaqueTLCBlockFcn("Outputs", 1, 38, 0, 2)
+%assign tlcOutputsFcnOfS1B39 = OpaqueTLCBlockFcn("Outputs", 1, 39, 0, 2)
+%assign tlcOutputsFcnOfS1B40 = OpaqueTLCBlockFcn("Outputs", 1, 40, 0, 2)
+%assign tlcOutputsFcnOfS1B41 = OpaqueTLCBlockFcn("Outputs", 1, 41, 0, 2)
+%assign tlcOutputsFcnOfS1B42 = OpaqueTLCBlockFcn("Outputs", 1, 42, 0, 2)
+%assign tlcOutputsFcnOfS1B43 = OpaqueTLCBlockFcn("Outputs", 1, 43, 0, 2)
+%assign tlcOutputsFcnOfS1B44 = OpaqueTLCBlockFcn("Outputs", 1, 44, 0, 2)
+%assign tlcOutputsFcnOfS1B45 = OpaqueTLCBlockFcn("Outputs", 1, 45, 0, 2)
+%assign tlcOutputsFcnOfS1B46 = OpaqueTLCBlockFcn("Outputs", 1, 46, 0, 2)
+%assign tlcOutputsFcnOfS1B47 = OpaqueTLCBlockFcn("Outputs", 1, 47, 0, 2)
+%assign tlcOutputsFcnOfS1B48 = OpaqueTLCBlockFcn("Outputs", 1, 48, 0, 2)
+%assign tlcOutputsFcnOfS1B49 = OpaqueTLCBlockFcn("Outputs", 1, 49, 0, 2)
+%assign tlcOutputsFcnOfS1B50 = OpaqueTLCBlockFcn("Outputs", 1, 50, 0, 2)
+%assign tlcOutputsFcnOfS1B51 = OpaqueTLCBlockFcn("Outputs", 1, 51, 0, 2)
+%assign tlcOutputsFcnOfS1B52 = OpaqueTLCBlockFcn("Outputs", 1, 52, 0, 2)
+%assign tlcOutputsFcnOfS1B53 = OpaqueTLCBlockFcn("Outputs", 1, 53, 0, 2)
+%assign tlcOutputsFcnOfS1B54 = OpaqueTLCBlockFcn("Outputs", 1, 54, 0, 2)
+%assign tlcOutputsFcnOfS1B55 = OpaqueTLCBlockFcn("Outputs", 1, 55, 0, 2)
+%assign tlcOutputsFcnOfS1B56 = OpaqueTLCBlockFcn("Outputs", 1, 56, 0, 2)
+%assign tlcOutputsFcnOfS1B57 = OpaqueTLCBlockFcn("Outputs", 1, 57, 0, 2)
+%<SLibGetRootInportsFromFile(system)>
+%<SLibGenerateExtModeOutput(system)>
+if (%<(SLibCG_SE(SLibCGIRIsSampleHit(1, 1)))> && %<(SLibCG_SE(LibIsSpecialSampleHit(2, 1)))>) {
+    for (i = 0; i < 5; i++) {
+        rtB.ozbz5gubyy[i] = rtDW.amimst5ihy[i];
+    }
+    rtB.k31flhapgm = rtB.ozbz5gubyy[4];
+}
+if (%<(SLibCGIRIsSampleHit(2, 1))>) {
+    rtDW.aksh5baiiy = rtB.k31flhapgm;
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.cumtgeesf2 = rtP.roll_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B0>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.pw0st5lz3o = rtP.dotroll_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B1>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.jtvpyj40xq = rtP.pitch_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B2>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.nrjzzj2qug = rtP.dotpitch_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B3>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.mgjibyeiyq = rtP.yaw_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B4>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.h1kzkggluy = rtP.dotyaw_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B5>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.fdumaqsogw = rtP.z_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B6>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.nf2qdv5ebg = rtP.dotz_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B7>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.csb3miaubk = rtP.x_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B8>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.ajoccxffw1 = rtP.dotx_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B9>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.hi3qcdmqxy = rtP.y_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B10>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.bjkxqowawx = rtP.doty_Value;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B11>\
+    rtB.pepd00zeuf = 0.0;
+    rtB.pepd00zeuf += rtP.TransferFcn_C * rtX.fgfapvxv0b;
+    rtB.aua3x414ti = 0.0;
+    rtB.aua3x414ti += rtP.TransferFcn_C_gddxvrmnrd * rtX.f4vt13on44;
+    rtB.hqwldoknnz = 0.0;
+    rtB.hqwldoknnz += rtP.TransferFcn_C_au45mpah0z * rtX.nhv5zrchlv;
+    rtB.gluoraqgop = 0.0;
+    rtB.gluoraqgop += rtP.TransferFcn_C_e3wlxyrs12 * rtX.aln1ucy2xy;
+    currentTime = %<(SLibCG_SE(LibGetTaskTime(0)))>;
+    if (currentTime < rtP.Step_Time) {
+        glh3zydsra = rtP.Step_Y0;
+    } else {
+        glh3zydsra = rtP.Step_YFinal;
+    }
+%<tlcOutputsFcnOfS1B12>\
+    rtB.edmn2outgy[0] = rtB.cdja02j15f;
+    rtB.edmn2outgy[1] = rtB.kbhnlcxyyz;
+    rtB.edmn2outgy[2] = rtB.pdnnyerscl;
+    rtB.edmn2outgy[3] = rtB.irrqb34ycz;
+    rtB.edmn2outgy[4] = rtB.p2xltln1oz;
+    rtB.edmn2outgy[5] = rtB.gdijseorjq;
+    rtB.edmn2outgy[6] = rtB.gfyi3fse25;
+    rtB.edmn2outgy[7] = rtB.ne0besc240;
+    rtB.edmn2outgy[8] = rtB.b23nygyrkg;
+    rtB.edmn2outgy[9] = rtB.izrx5q4pns;
+    rtB.edmn2outgy[10] = rtB.h1pfhd2zj2;
+    rtB.edmn2outgy[11] = rtB.eiaph3v4eo;
+    rtB.edmn2outgy[12] = rtB.pepd00zeuf;
+    rtB.edmn2outgy[13] = rtB.aua3x414ti;
+    rtB.edmn2outgy[14] = rtB.hqwldoknnz;
+    rtB.edmn2outgy[15] = rtB.gluoraqgop;
+    rtB.edmn2outgy[16] = glh3zydsra;
+    rtB.edmn2outgy[17] = rtB.bgqlfloxpg;
+%<tlcOutputsFcnOfS1B13>\
+    glh3zydsra = rtDW.d5hpgafpfn;
+    rtB.edmn2outgyd[0] = rtB.cdja02j15f;
+    rtB.edmn2outgyd[1] = rtB.kbhnlcxyyz;
+    rtB.edmn2outgyd[2] = rtB.pdnnyerscl;
+    rtB.edmn2outgyd[3] = rtB.irrqb34ycz;
+    rtB.edmn2outgyd[4] = rtB.p2xltln1oz;
+    rtB.edmn2outgyd[5] = rtB.gdijseorjq;
+    rtB.edmn2outgyd[6] = rtB.gfyi3fse25;
+    rtB.edmn2outgyd[7] = rtB.ne0besc240;
+    rtB.edmn2outgyd[8] = rtB.b23nygyrkg;
+    rtB.edmn2outgyd[9] = rtB.izrx5q4pns;
+    rtB.edmn2outgyd[10] = rtB.h1pfhd2zj2;
+    rtB.edmn2outgyd[11] = rtB.eiaph3v4eo;
+    memcpy(&rtB.edmn2outgyd[12], &rtB.msidewypgq[0], 24U * sizeof(real_T));
+    rtB.edmn2outgyd[36] = rtB.pepd00zeuf;
+    rtB.edmn2outgyd[37] = rtB.aua3x414ti;
+    rtB.edmn2outgyd[38] = rtB.hqwldoknnz;
+    rtB.edmn2outgyd[39] = rtB.gluoraqgop;
+    rtB.edmn2outgyd[40] = glh3zydsra;
+%<tlcOutputsFcnOfS1B14>\
+    rtDW.d5hpgafpfn = rtB.n2gxoppzio[13];
+    rtB.hzrfufgv2p = 0.0;
+    rtB.hzrfufgv2p += rtP.roll_C[0] * rtX.p40g4detwi[0];
+    rtB.hzrfufgv2p += rtP.roll_C[1] * rtX.p40g4detwi[1];
+    rtB.b3vexukr4b = 0.0;
+    rtB.b3vexukr4b += rtP.pitch_C[0] * rtX.mqjchgz4oq[0];
+    rtB.b3vexukr4b += rtP.pitch_C[1] * rtX.mqjchgz4oq[1];
+    rtB.ntrrkro4y1 = 0.0;
+    rtB.ntrrkro4y1 += rtP.yaw_C[0] * rtX.a1icmnjoge[0];
+    rtB.ntrrkro4y1 += rtP.yaw_C[1] * rtX.a1icmnjoge[1];
+    rtB.bfseptnrxe = 0.0;
+    rtB.bfseptnrxe += rtP.z_C[0] * rtX.ivhgvql01s[0];
+    rtB.bfseptnrxe += rtP.z_C[1] * rtX.ivhgvql01s[1];
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.jswm3kn0qq[0] = rtDW.kq02dqwfkb[0];
+    rtB.jswm3kn0qq[1] = rtDW.kq02dqwfkb[1];
+    rtB.jswm3kn0qq[2] = rtDW.kq02dqwfkb[2];
+    rtB.jswm3kn0qq[3] = rtDW.kq02dqwfkb[3];
+    memcpy(&rtB.gq4lswg0rt[0], &rtDW.l2df25kmqu[0], 12U * sizeof(real_T));
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+    memcpy(&rtB.i3qitpzccz[0], &rtDW.goeaybcczk[0], 4952U * sizeof(real_T));
+    kedihqp5e5[0] = rtDW.lbjuqj1jse[0];
+    kedihqp5e5[1] = rtDW.lbjuqj1jse[1];
+    kedihqp5e5[2] = rtDW.lbjuqj1jse[2];
+    k30sxm53qk[0] = rtDW.ijl15xpdki[0];
+    k30sxm53qk[1] = rtDW.ijl15xpdki[1];
+    k30sxm53qk[2] = rtDW.ijl15xpdki[2];
+    glh3zydsra = rtDW.m5faqsniyp;
+%<tlcOutputsFcnOfS1B15>\
+    for (i = 0; i < 4952; i++) {
+        rtDW.goeaybcczk[i] = rtB.hwxu4oafae[i];
+        rtB.foldjxaoe3[i] = rtDW.goeaybcczk[i];
+    }
+    k30sxm53qk[0] = rtDW.ijl15xpdki[0];
+    k30sxm53qk[1] = rtDW.ijl15xpdki[1];
+    k30sxm53qk[2] = rtDW.ijl15xpdki[2];
+%<tlcOutputsFcnOfS1B16>\
+    k30sxm53qk[0] = rtDW.lbjuqj1jse[0];
+    k30sxm53qk[1] = rtDW.lbjuqj1jse[1];
+    k30sxm53qk[2] = rtDW.lbjuqj1jse[2];
+%<tlcOutputsFcnOfS1B17>\
+    rtDW.jh112nxos5[0] = lynfajuhei[0];
+    rtDW.jh112nxos5[1] = lynfajuhei[1];
+    rtDW.jh112nxos5[2] = lynfajuhei[2];
+    rtDW.jh112nxos5[3] = lynfajuhei[3];
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+%<tlcOutputsFcnOfS1B18>\
+%<tlcOutputsFcnOfS1B19>\
+%<tlcOutputsFcnOfS1B20>\
+    rtB.otws11b1sk[0] = rtDW.jh112nxos5[0];
+    rtB.otws11b1sk[1] = rtDW.jh112nxos5[1];
+    rtB.otws11b1sk[2] = rtDW.jh112nxos5[2];
+    rtB.otws11b1sk[3] = rtDW.jh112nxos5[3];
+%<tlcOutputsFcnOfS1B21>\
+%<tlcOutputsFcnOfS1B22>\
+%<tlcOutputsFcnOfS1B23>\
+%<tlcOutputsFcnOfS1B24>\
+%<tlcOutputsFcnOfS1B25>\
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B26>\
+%<tlcOutputsFcnOfS1B27>\
+    rtB.pzcvpymp2o = rtP.Gain_Gain * rtB.pdnnyerscl;
+    rtB.c2trwuf2a0 = rtP.Gain1_Gain * rtB.p2xltln1oz;
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+%<tlcOutputsFcnOfS1B29>\
+%<tlcOutputsFcnOfS1B30>\
+%<tlcOutputsFcnOfS1B31>\
+%<tlcOutputsFcnOfS1B32>\
+%<tlcOutputsFcnOfS1B33>\
+%<tlcOutputsFcnOfS1B34>\
+%<tlcOutputsFcnOfS1B35>\
+%<tlcOutputsFcnOfS1B36>\
+%<tlcOutputsFcnOfS1B37>\
+%<tlcOutputsFcnOfS1B38>\
+%<tlcOutputsFcnOfS1B39>\
+%<tlcOutputsFcnOfS1B40>\
+%<tlcOutputsFcnOfS1B41>\
+%<tlcOutputsFcnOfS1B42>\
+%<tlcOutputsFcnOfS1B43>\
+}
+if (%<(SLibCGIRIsSampleHit(2, 1))>) {
+    ecdlkesonw = rtDW.aksh5baiiy;
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B44>\
+}
+if (%<(SLibCGIRIsSampleHit(2, 1))>) {
+%<tlcOutputsFcnOfS1B45>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+    rtB.ga0feqo2ui = rtDW.monqffvnvw;
+%<tlcOutputsFcnOfS1B46>\
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+%<tlcOutputsFcnOfS1B47>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+%<tlcOutputsFcnOfS1B48>\
+%<tlcOutputsFcnOfS1B49>\
+%<tlcOutputsFcnOfS1B50>\
+%<tlcOutputsFcnOfS1B51>\
+%<tlcOutputsFcnOfS1B52>\
+}
+if (%<(SLibCGIRIsSampleHit(0, 1))>) {
+    rtB.edmn2outgydo[0] = rtB.doynqrr11d[0];
+    rtB.edmn2outgydo[1] = rtB.ga0feqo2ui;
+%<tlcOutputsFcnOfS1B53>\
+    rtB.edmn2outgydot[0] = rtB.doynqrr11d[1];
+    rtB.edmn2outgydot[1] = rtB.ga0feqo2ui;
+%<tlcOutputsFcnOfS1B54>\
+    rtB.edmn2outgydot4[0] = rtB.doynqrr11d[2];
+    rtB.edmn2outgydot4[1] = rtB.ga0feqo2ui;
+%<tlcOutputsFcnOfS1B55>\
+    rtB.edmn2outgydot4m[0] = rtB.doynqrr11d[3];
+    rtB.edmn2outgydot4m[1] = rtB.ga0feqo2ui;
+%<tlcOutputsFcnOfS1B56>\
+}
+if (%<(SLibCGIRIsSampleHit(1, 1))>) {
+%<tlcOutputsFcnOfS1B57>\
+}
+%<SLibInsertSolverResetCode()>\
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<comma>int32_T tid\
+%assign comma = ", "
+%endif
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
